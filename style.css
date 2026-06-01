@@ -1,0 +1,30 @@
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+#header {
+    text-align: center;
+    padding: 40px;
+}
+
+#gallery {
+    width: 900px;
+    margin: auto;
+}
+
+#gallery img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#controls {
+    text-align: center;
+    padding: 40px;
+}
