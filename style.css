@@ -2,50 +2,47 @@ body {
     margin: 0;
     color: white;
     font-family: sans-serif;
+}
 
-    background:
-        url("top.png") top center no-repeat,
-        url("bottom.png") bottom center no-repeat,
+#top-bg {
+    height: 331px;
+    background: url("top.png") center top no-repeat;
+    background-size: 100% auto;
+}
 
-        repeating-linear-gradient(
-            to bottom,
-            #2F005E 0px,
-            #2F005E 32px,
+#content {
+    min-height: 100vh;
 
-            #3A1A78 32px,
-            #3A1A78 64px,
+    background: repeating-linear-gradient(
+        to bottom,
 
-            #453492 64px,
-            #453492 96px,
+        #2F005E 0px,
+        #2F005E 80px,
 
-            #504EAC 96px,
-            #504EAC 128px,
+        #472281 80px,
+        #472281 160px,
 
-            #5B68C6 128px,
-            #5B68C6 160px,
+        #5D45A3 160px,
+        #5D45A3 240px,
 
-            #6682E0 160px,
-            #6682E0 192px,
+        #7368C6 240px,
+        #7368C6 320px,
 
-            #719CFA 192px,
-            #719CFA 224px,
+        #5C92D3 320px,
+        #5C92D3 400px,
 
-            #5EBBE3 224px,
-            #5EBBE3 256px,
+        #42A8CF 400px,
+        #42A8CF 480px,
 
-            #26B5CC 256px,
-            #26B5CC 288px
-        );
+        #26B5CC 480px,
+        #26B5CC 560px
+    );
+}
 
-    background-size:
-        100% auto,
-        100% auto,
-        100% 100%;
-
-    background-repeat:
-        no-repeat,
-        no-repeat,
-        repeat-y;
+#bottom-bg {
+    height: 848px;
+    background: url("bottom.png") center bottom no-repeat;
+    background-size: 100% auto;
 }
 
 #header {
@@ -55,6 +52,7 @@ body {
 
 #gallery {
     width: 900px;
+    max-width: 95%;
     margin: auto;
 }
 
@@ -62,11 +60,6 @@ body {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-}
-
-#controls {
-    text-align: center;
-    padding: 40px;
 }
 
 .controls {

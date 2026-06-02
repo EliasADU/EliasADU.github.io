@@ -8,7 +8,6 @@ const images = [
     "images/009.jpeg",
     "images/010.jpeg"
 ];
-
 let page = 0;
 let pageSize = 10;
 
