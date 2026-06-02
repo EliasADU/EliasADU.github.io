@@ -10,18 +10,15 @@ body {
     );
 }
 
-#top-bg {
-    background: url("top.png") center top no-repeat;
-    background-size: 100% auto;
-}
-
 #content {
     min-height: 100vh;
 }
 
+#top-bg,
 #bottom-bg {
-    background: url("bottom.png") center bottom no-repeat;
-    background-size: 100% auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #header {
@@ -51,6 +48,37 @@ body {
 
 .controls button,
 .controls select {
+    border: none;
+    border-radius: 6px;
     font-size: 16px;
     padding: 8px 12px;
+    cursor: pointer;
+}
+
+.controls-top button {
+    background: #FFD54A;
+    color: #3A2500;
+}
+
+.controls-top button:hover {
+    background: #FFE27A;
+}
+
+.controls-top select {
+    background: #FFF3A3;
+    color: #3A2500;
+}
+
+.controls-bottom button {
+    background: #5CA85C;
+    color: white;
+}
+
+.controls-bottom button:hover {
+    background: #75BF75;
+}
+
+.controls-bottom select {
+    background: #A5D6A7;
+    color: #183018;
 }
