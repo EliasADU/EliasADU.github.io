@@ -13,29 +13,10 @@ body {
 #content {
     min-height: 100vh;
 
-    background: repeating-linear-gradient(
+    background: linear-gradient(
         to bottom,
-
-        #2F005E 0px,
-        #2F005E 80px,
-
-        #472281 80px,
-        #472281 160px,
-
-        #5D45A3 160px,
-        #5D45A3 240px,
-
-        #7368C6 240px,
-        #7368C6 320px,
-
-        #5C92D3 320px,
-        #5C92D3 400px,
-
-        #42A8CF 400px,
-        #42A8CF 480px,
-
-        #26B5CC 480px,
-        #26B5CC 560px
+        #2F005E 0%,
+        #26B5CC 100%
     );
 }
 
