@@ -11,7 +11,6 @@ body {
 }
 
 #top-bg {
-    height: 331px;
     background: url("top.png") center top no-repeat;
     background-size: 100% auto;
 }
@@ -21,7 +20,6 @@ body {
 }
 
 #bottom-bg {
-    height: 848px;
     background: url("bottom.png") center bottom no-repeat;
     background-size: 100% auto;
 }
