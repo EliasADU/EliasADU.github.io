@@ -1,6 +1,4 @@
 const images = [
-    "images/001.jpeg",
-    "images/002.jpeg",
     "images/003.jpeg",
     "images/004.jpeg",
     "images/005.jpeg",
