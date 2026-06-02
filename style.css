@@ -1,7 +1,8 @@
 body {
     background-image: url("background.jpg");
     background-size: cover;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
 
     margin: 0;
     color: white;
@@ -27,4 +28,19 @@ body {
 #controls {
     text-align: center;
     padding: 40px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    padding: 24px;
+}
+
+.controls button,
+.controls select {
+    font-size: 16px;
+    padding: 8px 12px;
 }

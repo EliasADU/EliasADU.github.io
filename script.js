@@ -9,8 +9,15 @@ const images = [
     "images/010.jpeg"
 ];
 
-const pageSize = 10;
 let page = 0;
+let pageSize = 10;
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "instant"
+    });
+}
 
 function render() {
     const gallery = document.getElementById("gallery");
@@ -24,20 +31,44 @@ function render() {
         img.src = src;
         gallery.appendChild(img);
     });
+
+    document.getElementById("pageSize").value = pageSize;
+    document.getElementById("pageSizeMirror").value = pageSize;
 }
 
-document.getElementById("prev").onclick = () => {
+function previousPage() {
     if (page > 0) {
         page--;
         render();
+        scrollToTop();
     }
-};
+}
 
-document.getElementById("next").onclick = () => {
+function nextPage() {
     if ((page + 1) * pageSize < images.length) {
         page++;
         render();
+        scrollToTop();
     }
-};
+}
+
+function changePageSize(size) {
+    pageSize = parseInt(size);
+    page = 0;
+    render();
+    scrollToTop();
+}
+
+document.getElementById("prevTop").onclick = previousPage;
+document.getElementById("prevBottom").onclick = previousPage;
+
+document.getElementById("nextTop").onclick = nextPage;
+document.getElementById("nextBottom").onclick = nextPage;
+
+document.getElementById("pageSize").onchange = e =>
+    changePageSize(e.target.value);
+
+document.getElementById("pageSizeMirror").onchange = e =>
+    changePageSize(e.target.value);
 
 render();

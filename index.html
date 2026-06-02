@@ -7,14 +7,35 @@
 <body>
 
 <div id="header">
-    <h1>Elias & Fiorella's Wedding </h1>
+    <h1>Elias & Fiorella's Wedding</h1>
+</div>
+
+<div class="controls">
+    <button id="prevTop">← Previous</button>
+
+    <select id="pageSize">
+        <option value="5">5 Images</option>
+        <option value="10" selected>10 Images</option>
+        <option value="20">20 Images</option>
+        <option value="50">50 Images</option>
+    </select>
+
+    <button id="nextTop">Next →</button>
 </div>
 
 <div id="gallery"></div>
 
-<div id="controls">
-    <button id="prev">← Previous</button>
-    <button id="next">Next →</button>
+<div class="controls">
+    <button id="prevBottom">← Previous</button>
+
+    <select id="pageSizeMirror">
+        <option value="5">5 Images</option>
+        <option value="10" selected>10 Images</option>
+        <option value="20">20 Images</option>
+        <option value="50">50 Images</option>
+    </select>
+
+    <button id="nextBottom">Next →</button>
 </div>
 
 <script src="script.js"></script>
