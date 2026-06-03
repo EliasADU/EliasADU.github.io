@@ -72,7 +72,6 @@ function render() {
     });
 
     document.getElementById("pageSize").value = pageSize;
-    document.getElementById("pageSizeMirror").value = pageSize;
 }
 
 function previousPage() {
@@ -105,9 +104,6 @@ document.getElementById("nextTop").onclick = nextPage;
 document.getElementById("nextBottom").onclick = nextPage;
 
 document.getElementById("pageSize").onchange = e =>
-    changePageSize(e.target.value);
-
-document.getElementById("pageSizeMirror").onchange = e =>
     changePageSize(e.target.value);
 
 render();
