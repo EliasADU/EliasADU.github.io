@@ -36,7 +36,7 @@ const images = [
     "images/037.jpeg"
 ];
 let page = 0;
-let pageSize = 10;
+let pageSize = 50;
 
 function scrollToTop() {
     const startY = window.scrollY;
