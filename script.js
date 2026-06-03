@@ -12,10 +12,23 @@ let page = 0;
 let pageSize = 10;
 
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: "instant"
-    });
+    const startY = window.scrollY;
+    const duration = 400;
+
+    const startTime = performance.now();
+
+    function animate(currentTime) {
+        const elapsed = currentTime - startTime;
+        const t = Math.min(elapsed / duration, 1);
+
+        window.scrollTo(0, startY * (1 - t));
+
+        if (t < 1) {
+            requestAnimationFrame(animate);
+        }
+    }
+
+    requestAnimationFrame(animate);
 }
 
 function render() {

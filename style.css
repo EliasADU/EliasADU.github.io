@@ -10,6 +10,14 @@ body {
     );
 }
 
+#title-logo {
+    display: block;
+    width: 1200px;
+    max-width: 95vw;
+    height: auto;
+    margin: 0 auto;
+}
+
 #content {
     min-height: 100vh;
 }
