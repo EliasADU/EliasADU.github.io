@@ -50,35 +50,7 @@ body {
 .controls select {
     border: none;
     border-radius: 6px;
-    font-size: 16px;
-    padding: 8px 12px;
+    font-size: 20px;
+    padding: 16px 24px;
     cursor: pointer;
-}
-
-.controls-top button {
-    background: #FFD54A;
-    color: #3A2500;
-}
-
-.controls-top button:hover {
-    background: #FFE27A;
-}
-
-.controls-top select {
-    background: #FFF3A3;
-    color: #3A2500;
-}
-
-.controls-bottom button {
-    background: #5CA85C;
-    color: white;
-}
-
-.controls-bottom button:hover {
-    background: #75BF75;
-}
-
-.controls-bottom select {
-    background: #A5D6A7;
-    color: #183018;
 }
