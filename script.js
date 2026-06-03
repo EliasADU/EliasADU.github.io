@@ -35,7 +35,7 @@ const images = [
     "images/036.jpeg",
     "images/037.jpeg"
 ];
-let page = 1;
+let page = 0;
 let pageSize = 10;
 
 function scrollToTop() {
